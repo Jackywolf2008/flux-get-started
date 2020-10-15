@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   namespace: demo
+  name: podinfo
   annotations:
     sas.com/certificate-file-format: pem
     sas.com/owner: "49506"
@@ -10,7 +11,7 @@ metadata:
     sas.com/tls-enabled-ports: all
     sidecar.istio.io/inject: "false"
   creationTimestamp: null
-  generateName: sas-launcher-2fc3f785-8c10-408c-ab54-11580ac49060-
+  #generateName: sas-launcher-2fc3f785-8c10-408c-ab54-11580ac49060-
   labels:
     controller-uid: 7edf1de2-6e8e-4def-96f9-c5b4e0af2d21
     job-name: sas-launcher-2fc3f785-8c10-408c-ab54-11580ac49060
